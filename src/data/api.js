@@ -1,38 +1,28 @@
 const events = [
   {
     id: 1,
-    date: 1665475200000,
-    text: 'event 0'
+    date: 1670750400000,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
   {
     id: 2,
-    date: 1670746800000,
-    text: 'событие 1'
+    date: 1670751900000,
+    text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
   {
     id: 3,
-    date: 1670750400000,
-    text: 'событие 2'
+    date: 1671782400000,
+    text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
   },
   {
     id: 4,
-    date: 1670751900000,
-    text: 'событие 3'
+    date: 1673956800000,
+    text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id: 5,
-    date: 1671782400000,
-    text: 'событие 4'
-  },
-  {
-    id: 6,
     date: 1673956800000,
-    text: 'событие 5'
-  },
-  {
-    id: 7,
-    date: 1673956800000,
-    text: 'событие 5'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   }
 ]
 
@@ -67,7 +57,7 @@ const winners = [
     email: 'semen@mail.ru',
     phone: '+7953770011',
     date: 1677840000000,
-    prize: 'Пивная кружка'
+    prize: 'Крепкое дружеское рукопожатие'
   },
   {
     id: 5,
@@ -93,7 +83,6 @@ export const getEvents = () =>
   })
 export const getWinners = () =>
   new Promise((resolve) => {
-    console.log('aasda')
     resolve(winners)
   })
 
