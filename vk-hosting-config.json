@@ -4,7 +4,7 @@
   "endpoints": {
     "mobile": "index.html",
     "mvk": "index.html",
-    "web": "index.html",
-    "noprompt": true
-  }
+    "web": "index.html"
+  },
+  "noprompt": true
 }
