@@ -4,7 +4,7 @@
       <slot name="header"></slot>
     </section>
 
-    <section class="hero-body is-align-items-start pt-2">
+    <section class="hero-body is-align-items-start is-justify-content-center pt-2">
       <slot name="main"></slot>
     </section>
 

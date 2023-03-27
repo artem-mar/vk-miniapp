@@ -1,10 +1,9 @@
 <template>
   <div class="has-text-centered has-background-warning-light box has-text-left">
-    {{ event.text }}
-    <br />
-    {{ eventDate }}
-    <br />
-    {{ eventTime }}
+    <p class="mb-3">{{ event.text }}</p>
+    <p class="has-text-right is-italic">
+      <small>{{ eventDate }} {{ eventTime }}</small>
+    </p>
   </div>
 </template>
 
