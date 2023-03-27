@@ -16,10 +16,9 @@
 const props = defineProps({
   winner: {
     type: Object,
-    required: true,
+    required: true
   }
-});
+})
 
-const date = new Date(props.winner.date).toLocaleDateString();
-
+const date = new Date(props.winner.date).toLocaleDateString()
 </script>

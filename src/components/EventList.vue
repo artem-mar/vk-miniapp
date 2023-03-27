@@ -10,12 +10,12 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
-import { computed } from 'vue';
-import EventItem from './EventItem.vue';
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+import EventItem from './EventItem.vue'
 
-const store = useStore();
+const store = useStore()
 
-store.dispatch('fetchEvents');
-const events = computed(() => store.getters.getEvents);
+store.dispatch('fetchEvents')
+const events = computed(() => store.getters.getEvents)
 </script>

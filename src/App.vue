@@ -1,8 +1,8 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import FooterView from './components/FooterView.vue';
-import HeaderView from './components/HeaderView.vue';
-import PageLayout from './components/PageLayout.vue';
+import FooterView from './components/FooterView.vue'
+import HeaderView from './components/HeaderView.vue'
+import PageLayout from './components/PageLayout.vue'
 </script>
 
 <template>
@@ -19,13 +19,10 @@ import PageLayout from './components/PageLayout.vue';
   </PageLayout>
 </template>
 
-
 <style>
-
 .foot {
   position: fixed;
   bottom: 0;
   width: 100vw;
 }
-
 </style>

@@ -1,23 +1,23 @@
-import { getEvents } from "../data/api";
+import { getEvents } from '../data/api'
 
 export const eventsModule = {
   state: () => ({
-    events: [],
+    events: []
   }),
   getters: {
     getEvents(state) {
-      return state.events;
+      return state.events
     }
   },
   mutations: {
     setEvents(state, events) {
-      state.events = events;
+      state.events = events
     }
   },
   actions: {
-    async fetchEvents({commit}) {
-      const events = await getEvents();
-      commit('setEvents', events);
+    async fetchEvents({ commit }) {
+      const events = await getEvents()
+      commit('setEvents', events)
     }
   }
 }
