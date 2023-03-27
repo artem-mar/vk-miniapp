@@ -3,6 +3,10 @@ import { RouterView } from 'vue-router'
 import FooterView from './components/FooterView.vue'
 import HeaderView from './components/HeaderView.vue'
 import PageLayout from './components/PageLayout.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+router.push('/')
 </script>
 
 <template>

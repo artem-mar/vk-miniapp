@@ -4,7 +4,9 @@
     <p>Email: {{ winner.email }}</p>
     <p>Телефон: {{ winner.phone }}</p>
     <p>Приз: {{ winner.prize }}</p>
-    <p class="has-text-right is-italic"><small>{{ date }}</small></p>
+    <p class="has-text-right is-italic">
+      <small>{{ date }}</small>
+    </p>
   </div>
 </template>
 
