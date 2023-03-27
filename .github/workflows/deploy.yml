@@ -6,21 +6,22 @@ on:
   pull_request:
     branches: [ "main" ]
 
-build:
-  runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-  strategy:
-    matrix:
-      node-version: [14.x, 16.x, 18.x]
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
 
-  steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-      env:
-        MINI_APPS_ACCESS_TOKEN: ${{ secrets.MINI_APPS_ACCESS_TOKEN }}
-    - run: npm run deploy
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+        env:
+          MINI_APPS_ACCESS_TOKEN: ${{ secrets.MINI_APPS_ACCESS_TOKEN }}
+      - run: npm run deploy
