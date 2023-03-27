@@ -22,4 +22,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci
-      - run: env MINI_APPS_ACCESS_TOKEN=${{ secrets.MINI_APPS_ACCESS_TOKEN }} npm run deploy
+      - run: env MINI_APPS_ACCESS_TOKEN=${{ secrets.SERVICE_TOKEN }} npm run deploy
